@@ -9,7 +9,7 @@ public class CameraFollow : MonoBehaviour
     {
         Vector3 desiredPosition = new Vector3(
             target.position.x,
-            target.position.y +1f,
+            target.position.y * 0.5f + 1f,
             -10f
         );
 

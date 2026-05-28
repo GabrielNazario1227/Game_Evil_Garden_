@@ -762,7 +762,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3
+  orthographic size: 2
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4851,8 +4851,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.007119274, y: -0.03203676}
-  m_Radius: 0.17897193
+  m_Offset: {x: -0.007119268, y: -0.017106026}
+  m_Radius: 0.16404119
 --- !u!212 &931930028
 SpriteRenderer:
   serializedVersion: 2
@@ -4921,7 +4921,7 @@ Transform:
   m_GameObject: {fileID: 931930025}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.1, y: 0.12, z: 0}
+  m_LocalPosition: {x: -10.0993, y: 0.1063, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8958,7 +8958,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0030475035, y: -0.01740449}
+  m_Offset: {x: 0.0063476562, y: -0.033813488}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8968,7 +8968,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.17274286, y: 0.21640764}
+  m_Size: {x: 0.13204223, y: 0.18358964}
   m_EdgeRadius: 0
 --- !u!1839735485 &1931422730
 Tilemap:

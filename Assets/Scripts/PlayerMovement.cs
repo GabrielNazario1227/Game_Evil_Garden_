@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Animações
         anim.SetFloat("Speed", Mathf.Abs(moveInput));
-        anim.SetBool("IsJumping", !isGrounded);
+        anim.SetBool("IsJumping", Mathf.Abs(rb.linearVelocity.y) > 0.1f);
 
         // Virar personagem
         if (moveInput > 0)

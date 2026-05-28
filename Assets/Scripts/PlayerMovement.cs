@@ -126,7 +126,12 @@ public class PlayerMovement : MonoBehaviour
             Die();
         }
 
-        if (collision.CompareTag("Door"))
+        if (collision.CompareTag("Door1"))
+        {
+            NextLevel();
+        }
+
+        if (collision.CompareTag("Door2"))
         {
             Win();
         }
@@ -158,6 +163,7 @@ public class PlayerMovement : MonoBehaviour
         Invoke("RestartLevel", 0.5f);
     }
 
+
     void RestartLevel()
     {
         SceneManager.LoadScene(
@@ -170,5 +176,12 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Você venceu!");
 
         SceneManager.LoadScene("WinScene");
+    }
+
+    void NextLevel()
+    {
+        Debug.Log("Próxima fase!");
+
+        SceneManager.LoadScene("Level2");
     }
 }

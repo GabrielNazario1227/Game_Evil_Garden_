@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Triggerlado.cs" />
+    <Compile Include="Assets\Scripts\menuloader.cs" />
     <Compile Include="Assets\Scripts\FallingPlatform.cs" />
     <Compile Include="Assets\Scripts\TrapTrigger.cs" />
     <Compile Include="Assets\Scripts\Parallax.cs" />

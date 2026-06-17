@@ -30,7 +30,7 @@ public class MenuLoader : MonoBehaviour
         }
 
         // Espera mais 5 segundos na logo
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(8f);
 
         // Inicia vídeo
 

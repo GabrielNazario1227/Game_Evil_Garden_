@@ -32,11 +32,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Animações
         anim.SetFloat("Speed", Mathf.Abs(moveInput));
         anim.SetBool("IsJumping", Mathf.Abs(rb.linearVelocity.y) > 0.1f);
 
-        // Virar personagem
         if (moveInput > 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
@@ -53,10 +51,8 @@ public class PlayerMovement : MonoBehaviour
             Application.Quit();
         }
 
-        // Não deixa controlar após morrer
         if (isDead) return;
 
-        // Som de passos
         if (Mathf.Abs(moveInput) > 0.1f && isGrounded)
         {
             if (!audioSource.isPlaying)
@@ -74,19 +70,16 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        // Morte ao cair
         if (transform.position.y < deathY)
         {
             Die();
         }
 
-        // Movimento
         rb.linearVelocity = new Vector2(
             moveInput * speed,
             rb.linearVelocity.y
         );
 
-        // Pulo
         if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
         {
             rb.linearVelocity = new Vector2(
@@ -95,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
             );
         }
 
-        
+
     }
 
     public void OnMove(InputValue value)
@@ -133,6 +126,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.CompareTag("Door2"))
         {
+            NextLevel2();
+        }
+
+        if (collision.CompareTag("Door3"))
+        {
             Win();
         }
     }
@@ -145,22 +143,25 @@ public class PlayerMovement : MonoBehaviour
 
         Debug.Log("Player morreu!");
 
+        // Ativa animação de morte
+        anim.SetBool("IsDead", true);
+
         if (deathCounter != null)
         {
             deathCounter.AddDeath();
         }
 
-        // Para passos
         audioSource.Stop();
 
-        // Toca som de morte
         audioSource.PlayOneShot(deathSound);
 
-        // Desativa movimento
+        // Para movimento
         rb.linearVelocity = Vector2.zero;
 
-        // Espera o som tocar
-        Invoke("RestartLevel", 0.5f);
+        // opcional: impede o player de andar durante a morte
+        rb.bodyType = RigidbodyType2D.Static;
+
+        Invoke("RestartLevel", 1.2f);
     }
 
 
@@ -183,5 +184,12 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Próxima fase!");
 
         SceneManager.LoadScene("Level2");
+    }
+
+    void NextLevel2()
+    {
+        Debug.Log("Próxima fase!");
+
+        SceneManager.LoadScene("level3");
     }
 }

@@ -447,7 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7465547fe6dd404cbe93c596e0e48c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  nomeDoLevelDeJogo: SampleScene
+  nomeDoLevelDeJogo: cutscene
   painelMenuInicial: {fileID: 1639012279}
   painelOpcoes: {fileID: 65378134}
 --- !u!4 &230376003
@@ -2754,7 +2754,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 490, y: -400}
+  m_AnchoredPosition: {x: 490, y: -430}
   m_SizeDelta: {x: 105, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2047570609

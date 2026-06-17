@@ -897,7 +897,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   cameraTransform: {fileID: 330585546}
-  parallaxEffect: 0.8
+  parallaxEffectX: 0.6
+  parallaxEffectY: 0
 --- !u!212 &391703208
 SpriteRenderer:
   serializedVersion: 2
@@ -1152,7 +1153,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0044920444, y: -0.0066806898}
+  m_Offset: {x: 0.0012653098, y: -0.0043013543}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1162,7 +1163,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.20290011, y: 0.23785524}
+  m_Size: {x: 0.16417883, y: 0.204543}
   m_EdgeRadius: 0
 --- !u!1839735485 &433729379
 Tilemap:
@@ -1307,7 +1308,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   cameraTransform: {fileID: 330585546}
-  parallaxEffect: 0.8
+  parallaxEffectX: 0.6
+  parallaxEffectY: 0
 --- !u!212 &488735529
 SpriteRenderer:
   serializedVersion: 2
@@ -1607,7 +1609,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   cameraTransform: {fileID: 330585546}
-  parallaxEffect: 0.2
+  parallaxEffectX: 0
+  parallaxEffectY: 0
 --- !u!212 &513901113
 SpriteRenderer:
   serializedVersion: 2
@@ -2831,7 +2834,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   cameraTransform: {fileID: 330585546}
-  parallaxEffect: 0.4
+  parallaxEffectX: 0.2
+  parallaxEffectY: 0
 --- !u!212 &646344533
 SpriteRenderer:
   serializedVersion: 2
@@ -2996,7 +3000,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   cameraTransform: {fileID: 330585546}
-  parallaxEffect: 0.4
+  parallaxEffectX: 0.2
+  parallaxEffectY: 0
 --- !u!1 &680571470
 GameObject:
   m_ObjectHideFlags: 0
@@ -3573,7 +3578,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740579865}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -4782,6 +4787,7 @@ GameObject:
   - component: {fileID: 931930031}
   - component: {fileID: 931930032}
   - component: {fileID: 931930033}
+  - component: {fileID: 931930034}
   m_Layer: 0
   m_Name: Personagem
   m_TagString: Player
@@ -4823,7 +4829,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931930025}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -5093,6 +5099,52 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!61 &931930034
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931930025}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.0015501976, y: -0.010790914}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6, y: 0.46}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.17526913, y: 0.32037002}
+  m_EdgeRadius: 0
 --- !u!1 &934273586
 GameObject:
   m_ObjectHideFlags: 0
@@ -5139,7 +5191,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   cameraTransform: {fileID: 330585546}
-  parallaxEffect: 0.6
+  parallaxEffectX: 0.4
+  parallaxEffectY: 0
 --- !u!212 &934273589
 SpriteRenderer:
   serializedVersion: 2
@@ -5658,7 +5711,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   cameraTransform: {fileID: 330585546}
-  parallaxEffect: 0.2
+  parallaxEffectX: 0
+  parallaxEffectY: 0
 --- !u!1 &1093313035
 GameObject:
   m_ObjectHideFlags: 0
@@ -6763,7 +6817,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   cameraTransform: {fileID: 330585546}
-  parallaxEffect: 0.6
+  parallaxEffectX: 0.4
+  parallaxEffectY: 0
 --- !u!212 &1363622581
 SpriteRenderer:
   serializedVersion: 2
@@ -7442,7 +7497,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   cameraTransform: {fileID: 330585546}
-  parallaxEffect: 0.2
+  parallaxEffectX: 0
+  parallaxEffectY: 0
 --- !u!212 &1448566181
 SpriteRenderer:
   serializedVersion: 2
@@ -8450,7 +8506,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   cameraTransform: {fileID: 330585546}
-  parallaxEffect: 0.8
+  parallaxEffectX: 0.6
+  parallaxEffectY: 0
 --- !u!1 &1755061811
 GameObject:
   m_ObjectHideFlags: 0
@@ -8556,7 +8613,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   cameraTransform: {fileID: 330585546}
-  parallaxEffect: 0.6
+  parallaxEffectX: 0.4
+  parallaxEffectY: 0
 --- !u!1 &1816235556
 GameObject:
   m_ObjectHideFlags: 0
@@ -9149,7 +9207,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   cameraTransform: {fileID: 330585546}
-  parallaxEffect: 0.4
+  parallaxEffectX: 0.2
+  parallaxEffectY: 0
 --- !u!212 &1985717480
 SpriteRenderer:
   serializedVersion: 2
